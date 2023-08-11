@@ -1,0 +1,20 @@
+@use "../abstracts" as *;
+@use "sass:color";
+
+.button {
+    display: inline-block;
+    border: 0.125rem solid currentColor;
+    border-radius: 10000rem;
+    color: $color-secondary;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    &:hover {
+        color: color.scale($color-secondary, $lightness: 20%);
+    }
+}
+
